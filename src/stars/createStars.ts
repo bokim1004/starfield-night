@@ -12,7 +12,7 @@ export const createStars = (count = 2000) => {
     positions[i * 3 + 1] = (Math.random() - 0.5) * 10;
     positions[i * 3 + 2] = (Math.random() - 0.5) * 10;
 
-    scales[i] = Math.random();
+    scales[i] = Math.random() * 0.6 + 0.2;
   }
 
   geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
